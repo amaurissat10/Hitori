@@ -1,0 +1,74 @@
+body { /*On applique le design suivant à l'ensemble de la page*/
+	text-align: center;
+	background-image: url("https://disenowebtandil.com/wp-content/uploads/2018/09/fond-cran-japon-fond-d-cran-avec-fond-ecran-japon-et-fond-ecran-de-pc-63-1366x768px-fond-ecran-de-pc.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+table { /*Les tableaux seront centrés sur la page*/
+	margin: auto;
+}
+
+table, td { /*Les tableaux et les cellules auront un padding, un background color et des bordures définis*/
+	padding: 1em 1.3em 1em 1.3em;
+	background-color: white;
+	border: 1px solid black;
+    border-collapse: collapse;
+}
+
+#table1, #table2, #table3 { /*Les trois tableaux seront masqués par défaut*/
+	display: none;
+}
+
+#rulesP { /*Design de l'encadrement des règles du jeu*/
+	display: none;
+	list-style-position: inside;
+	text-align: left;
+	margin-left: 12%;
+	margin-right: 12%; 
+	background-color: lightgrey;
+	border: 5px dashed green;
+	padding: 1em;
+}
+
+#rulesHover { /*Taille de l'image ou l'utilisateur passera sa souris*/
+	width: 10%;
+	height: 10%;
+}
+
+#header { /*Design de la div hover*/
+	font-size: 2em;
+	color: white;
+	text-shadow: 3px 3px #000000;
+}
+
+#winP,#loseP { /*Design des § de victoire et de check incorrect*/
+	display: none;
+	color: white;
+	font-style: bold;
+	font-size: 2em;
+	text-shadow: 1px 1px #000000;
+	margin-left: 30%;
+	margin-right: 30%; 
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+#winP { /*Fond vert pour le § de victoire*/
+		background-color: green;
+}
+
+#loseP { /*Fond rouge pour le § de check incorrect*/
+		background-color: red;
+}
+
+#timer { /*Design du § timer*/
+	display: none;
+	color: white;
+	font-style: bold;
+	font-size: 1.2em;
+	margin-left: 40%;
+	margin-right: 40%;
+	background-color: grey;
+	border: 2px solid black;
+}

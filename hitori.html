@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Hitori Game</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="./style.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	</head>
+	<body>
+		<div id="header">
+			<h1>Hitori : le jeu</h1>
+		</div>
+		<div id="rulesNav"> <!-- Div qui comprend les règles du jeu -->
+		 	<span><img src="https://www.soprono.com/_uploads/blog/5/4477_650x365.jpg" id="rulesHover">
+			<ul id="rulesP">
+				<li>Au début du jeu, chaque cellule d'une grille contient un chiffre (ou une lettre).</li>
+				<li>Le but est de colorer des cellules de sorte qu'il n'y ait qu'un seul même chiffre non coloré par ligne et par colonne.</li>
+				<li>Les cellules colorées ne doivent pas se toucher par les côtés. Mais leurs coins peuvent se toucher.</li>
+				<li>Toutes les cellules non colorées doivent être connectées par leurs côtés pour ne former qu'une seule pièce (on doit pouvoir parcourir toutes les cellules non colorées en passant de l'une à l'autre par un côté).</li>
+			</ul></span>
+		</div>
+		<div> <!-- Div qui contient le timer -->
+			<p id="timer"></p>
+		</div>
+		<div id="table1"> <!-- Div qui contient le premier tableau -->
+			<table>
+				<tr>
+					<td data="0">5</td><td data="0">4</td><td data="0">4</td><td data="0">3</td><td data="0">4</td>
+				</tr>
+				<tr>
+					<td data="0">3</td><td data="0">4</td><td data="0">2</td><td data="0">5</td><td data="0">4</td>
+				</tr>
+				<tr>
+					<td data="0">2</td><td data="0">5</td><td data="0">5</td><td data="0">1</td><td data="0">2</td>
+				</tr>
+				<tr>
+					<td data="0">2</td><td data="0">2</td><td data="0">1</td><td data="0">4</td><td data="0">5</td>
+				</tr>
+				<tr>
+					<td data="0">4</td><td data="0">1</td><td data="0">5</td><td data="0">3</td><td data="0">2</td>
+				</tr>
+			</table>
+		</div>
+		<div id="table2"> <!-- Div qui contient le deuxième tableau -->
+			<table>
+				<tr>
+					<td  data="0">4</td><td  data="0">4</td><td  data="0">4</td><td  data="0">2</td><td  data="0">2</td>
+				</tr>
+				<tr>
+					<td  data="0">4</td><td  data="0">2</td><td  data="0">3</td><td  data="0">5</td><td  data="0">1</td>
+				</tr>
+				<tr>
+					<td  data="0">1</td><td  data="0">1</td><td  data="0">2</td><td  data="0">5</td><td  data="0">4</td>
+				</tr>
+				<tr>
+					<td  data="0">1</td><td  data="0">3</td><td  data="0">4</td><td  data="0">1</td><td  data="0">5</td>
+				</tr>
+				<tr>
+					<td  data="0">3</td><td  data="0">5</td><td  data="0">4</td><td  data="0">4</td><td  data="0">1</td>
+				</tr>
+			</table>
+		</div>
+		<div id="table3"> <!-- Div qui contient le troisième plateau -->
+			<table>
+				<tr>
+					<td  data="0">2</td><td  data="0">2</td><td  data="0">2</td><td  data="0">5</td><td  data="0">1</td>
+				</tr>
+				<tr>
+					<td  data="0">5</td><td  data="0">4</td><td  data="0">2</td><td  data="0">3</td><td  data="0">4</td>
+				</tr>
+				<tr>
+					<td  data="0">5</td><td  data="0">1</td><td  data="0">4</td><td  data="0">5</td><td  data="0">2</td>
+				</tr>
+				<tr>
+					<td  data="0">2</td><td  data="0">4</td><td  data="0">5</td><td  data="0">1</td><td  data="0">3</td>
+				</tr>
+				<tr>
+					<td  data="0">3</td><td  data="0">5</td><td  data="0">1</td><td  data="0">1</td><td  data="0">4</td>
+				</tr>
+			</table>
+		</div>
+		<div>
+			<p id="winP"> <!-- Div qui contient le texte de victoire -->
+				Bravo, vous avez gagné
+				<br>
+				Recommencez une partie !
+			</p>
+			<p id="loseP"> <!-- Div qui contient le texte qui s'affichera quand l'utilisateur n'aura pas rentré la bonne combinaison -->
+				Incorrect !
+				<br>
+				Vous avez reçu un malus de 15 sec
+				<br>
+				Essayez encore
+			</p>
+		</div>
+		<br>
+		<div> <!-- Div avec les boutons -->
+			<button id="buttonNew">Nouveau</button>
+			<button id="buttonCheck">Checker</button>
+			<button id="buttonReset">Remettre à zéro</button>
+		</div>
+		<script type="text/javascript" src="./script.js"></script>
+	</body>
+</html>
